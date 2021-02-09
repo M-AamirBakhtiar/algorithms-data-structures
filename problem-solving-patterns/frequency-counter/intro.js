@@ -1,29 +1,3 @@
-/*
-
-===========================================================
-FREQUENCY COUNTER / HASH TABLE  PATTERN FOR PROBLEM SOLVING
-===========================================================
-
-Patteren
---------
-This pattern uses objects or sets to collect values / frequencies of values (how many times the same value appears), using this pattern we can avoid nested loops of O(n^2) with array and string inputs.
-
-Problem
---------
-Write a function called "same" which is going to accpet 2 arrays. This function will return "true" if every value in array 1 has its corresponding squared value in array 2.  The frequency of values (number of times they appear in each input array) must be the same. The order does not matter.
-
-
-Examples
----------
-
-invoking  like this --> same([1,2,3], [4,1,9]) should return 'true'
-
-invoking  like this --> same([1,2,3], [1,9]) should return 'false'
-
-invoking  like this --> same([1,2,1], [4,4,1]) should return 'false'
-
-*/
-
 const same = (arr1, arr2) => {
   // Return false if both arrays are not of the same length
   if (arr1.length !== arr2.length) return false;
@@ -58,6 +32,6 @@ const same = (arr1, arr2) => {
   return true;
 };
 
-console.log(same([1, 2, 3], [9, 1, 4])); // true
-console.log(same([1, 2, 3], [9, 1])); // false
-console.log(same([1, 2, 1], [4, 1, 4])); // false
+console.log(same([1, 2, 3], [9, 1, 4])); // Expected Output true
+console.log(same([1, 2, 3], [9, 1])); // Expected Output false
+console.log(same([1, 2, 1], [4, 1, 4])); // Expected Output false
